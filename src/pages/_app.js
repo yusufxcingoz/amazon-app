@@ -6,9 +6,9 @@ import { Auth0Provider } from "@auth0/auth0-react";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <Auth0Provider
-      domain="dev-q962xtov.eu.auth0.com"
-      clientId="V7O7Kz3MXggU8PUobBKNvBuxgTiA3M0Y"
-      redirectUr={"http://localhost:3000/"}
+      domain={process.env.AUTH0_DOMAIN}
+      clientId={process.env.AUTH0_CLIENT_ID}
+      redirectUr={"https://amazon-app-dyk3so6i7-yusufxcingoz.vercel.app/"}
     >
       <Provider store={store}>
         <Component {...pageProps} />

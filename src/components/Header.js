@@ -32,13 +32,21 @@ function Header() {
             className="cursor-pointer"
           />
         </div>
-        <div className="hidden md:flex flex-row  items-end text-white mx-4">
-          <LocationMarkerIcon className="h-5 mb-1" />
-          <div className="flex flex-col items-center link ">
-            <p className="link text-xs">Deliver to {user.name}</p>
-            <h4 className="text-sm font-bold"> Somewhere 05834</h4>
+        {isAuthenticated ? (
+          <div className="hidden md:flex flex-row  items-end text-white mx-4">
+            <LocationMarkerIcon className="h-5 mb-1" />
+            <div className="flex flex-col items-center link ">
+              <p className="link text-xs">Deliver to {user.name} </p>
+              <h4 className="text-sm font-bold"> Somewhere 05834</h4>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="hidden md:flex flex-row  items-end text-white mx-4">
+            <div className="flex flex-col items-center link ">
+              <h4 className="text-sm font-bold"> Login or Sign Up</h4>
+            </div>
+          </div>
+        )}
 
         <div className="sm:flex hidden items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-500 hover:bg-yellow-400 ">
           <input
