@@ -70,7 +70,9 @@ function Header() {
                   <div className="bg-white w-32 h-16 flex items-center ">
                     <button
                       onClick={() =>
-                        logout({ returnTo: "http://localhost:3000/" })
+                        logout({
+                          returnTo: "https://amazon-app-mauve.vercel.app/",
+                        })
                       }
                       className="mx-auto button"
                     >
