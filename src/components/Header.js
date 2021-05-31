@@ -35,8 +35,8 @@ function Header() {
         <div className="hidden md:flex flex-row  items-end text-white mx-4">
           <LocationMarkerIcon className="h-5 mb-1" />
           <div className="flex flex-col items-center link ">
-            <p className="link text-xs">Deliver to Yusuf</p>
-            <h4 className="text-sm font-bold"> Antalya 07475</h4>
+            <p className="link text-xs">Deliver to {user.name}</p>
+            <h4 className="text-sm font-bold"> Somewhere 1423</h4>
           </div>
         </div>
 
