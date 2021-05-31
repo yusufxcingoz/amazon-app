@@ -25,7 +25,7 @@ function Header() {
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           <Image
             onClick={() => router.push("/")}
-            src="https://www.pngjoy.com/pngm/16/437428_amazon-logo-amazon-logo-white-text-png-download.png"
+            src="https://links.papareact.com/f90"
             width={150}
             height={40}
             objectFit="contain"
@@ -36,7 +36,7 @@ function Header() {
           <LocationMarkerIcon className="h-5 mb-1" />
           <div className="flex flex-col items-center link ">
             <p className="link text-xs">Deliver to {user.name}</p>
-            <h4 className="text-sm font-bold"> Somewhere 1423</h4>
+            <h4 className="text-sm font-bold"> Somewhere 05834</h4>
           </div>
         </div>
 
